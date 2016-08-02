@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<color name="card_background">#08ffffff</color>
+    <color name="snackbar_bg">#282828</color>
+	
+</resources>

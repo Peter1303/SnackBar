@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Developed by Peter."
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_marginBottom="50dp"
+		android:textStyle="bold|italic"
+		android:textColor="@color/textBlue"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"
+			android:hint="输入您想要SHOW的内容"
+			android:id="@+id/mainEditText"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="SHOW"
+			android:textColor="@color/textColor"
+			android:layout_width="wrap_content"
+			android:id="@+id/mainSHOW"/>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="SHOW SNACKBAR"
+		android:id="@+id/show"
+		android:textColor="@color/textColor"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="SHOW LENGTH_SHORT SNACKBAR"
+		android:textColor="@color/textColor"
+		android:layout_width="wrap_content"
+		android:id="@+id/showLENGTH_SHORT"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="SHOW SNACKBAR WITHOUT BUTTON"
+		android:textColor="@color/textColor"
+		android:layout_width="wrap_content"
+		android:id="@+id/showSnackBarWithoutButton"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="SHOW SNACKBAR WITH BLUE BUTTON"
+		android:textColor="@color/textColor"
+		android:layout_width="wrap_content"
+		android:id="@+id/showSnackBarWithBlueButton"/>
+
+</LinearLayout>
+
