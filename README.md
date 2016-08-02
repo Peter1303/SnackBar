@@ -3,7 +3,6 @@
 ![API](https://img.shields.io/badge/API-8%2B-brightgreen.svg?style=flat)
 
 ==========
-
 <img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-00-47-972_com.snackbar.app.png' height='400'/> 
 <img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-01-22-707_com.snackbar.app.png' height='400'/>
 <img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-01-29-586_com.snackbar.app.png' height='400'/>
