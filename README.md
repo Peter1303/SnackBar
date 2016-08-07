@@ -8,7 +8,7 @@
 <img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-01-29-586_com.snackbar.app.png' height='400'/>
 <img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-01-32-237_com.snackbar.app.png' height='400'/>
 
-#[Demo下载](https://github.com/Peter1303/SnackBar/blob/master/demo/SnackBar.apk)
+#[Demo下载](https://github.com/Peter1303/SnackBar/blob/master/demo/SnackBar.apk?raw=true)
 
 ##### 目前这个库还有一些问题，希望能有大神改进
 - 在某些情况下Activity的界面可能不透明
