@@ -1,5 +1,5 @@
-# SnackBar
-一个极简且仿Material Design SnackBar的库
+# MaterialDialog
+一个极简且仿Material Design AlertDialog的库
 ![API](https://img.shields.io/badge/API-8%2B-brightgreen.svg?style=flat)
 
 ==========
