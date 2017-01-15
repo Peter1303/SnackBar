@@ -3,108 +3,55 @@
 ![API](https://img.shields.io/badge/API-8%2B-brightgreen.svg?style=flat)
 
 ==========
-<img src='https://github.com/Peter1303/MaterialDialog/blob/master/arts/Screenshot_2017-01-14-08-27-42-467_com.dialog.app.png' height='400'/> 
-<img src='https://github.com/Peter1303/MaterialDialog/blob/master/arts/Screenshot_2017-01-14-08-27-45-730_com.dialog.app.png' height='400'/>
-<img src='https://github.com/Peter1303/MaterialDialog/blob/master/arts/Screenshot_2017-01-14-08-27-38-856_com.dialog.app.png' height='400'/>
+<img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-00-47-972_com.snackbar.app.png' height='400'/> 
+<img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-01-22-707_com.snackbar.app.png' height='400'/>
+<img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-01-29-586_com.snackbar.app.png' height='400'/>
+<img src='https://github.com/Peter1303/SnackBar/blob/master/images/Screenshot_2016-08-01-12-01-32-237_com.snackbar.app.png' height='400'/>
 
-#[Demo下载](https://github.com/Peter1303/MaterialDialog/blob/master/app/build/bin/app.apk?raw=true)
+#[Demo下载](https://github.com/Peter1303/SnackBar/blob/master/demo/SnackBar.apk?raw=true)
+
+##### 目前这个库还有一些问题，希望能有大神改进
+- 在某些情况下Activity的界面可能不透明
 
 ##### 这个SnackBar有以下特点：
 - 极简而且体积小
-- 仿Material Design
+- 仿Material Design SnackBar
 - 可更改按钮颜色
 
 ### Gradle
 ```groovy
-compile 'peter1303.material.MaterialDesignDialog'
+compile 'com.widget.snackbar'
 ```
 
 使用方法：
-
+普通例子：
 ```java
-final MaterialDialog alert=new MaterialDialog(MainActivity.this);
-					alert.setTitle("标题")
-					.setMessage("消息")
-					.setPositiveButton("确定", new OnClickListener(){
-
-							@Override
-							public void onClick(View p1)
-							{
-								alert.dismiss();
-							}
-						})
-                  .setNegativeButton("取消", new OnClickListener(){
-
-							@Override
-							public void onClick(View p1)
-							{
-								alert.dismiss();
-							}
-						})
-                  .setNeutralButton("第三个", new OnClickListener(){
-
-							@Override
-							public void onClick(View p1)
-							{
-								
-							}
-						})
-                  .show();
+new SnackBar.makeText(YOURACTIVITY.this),"MESSAGE",SnackBar.LENGTH_LONG).show;
 ```
-自定义List方法：
+带有按钮事件方法：
 ```java
-List<String>list = new ArrayList<String>();
-					for(int i=0;i<10;i++){
-						list.add("item"+i);
-					}
-					MaterialDialog alert=new MaterialDialog(MainActivity.this);
-					alert.setTitle("标题")
-					.setItems(list, new ListView.OnItemClickListener(){
-
-							@Override
-							public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4)
-							{
-								Toast.makeText(MainActivity.this,""+p3,Toast.LENGTH_LONG).show();
-							}
-						})
-					.setItemsLongClick(new ListView.OnItemLongClickListener(){
-
-							@Override
-							public boolean onItemLongClick(AdapterView<?> p1, View p2, int p3, long p4)
-							{
-								Toast.makeText(MainActivity.this,"long "+p3,Toast.LENGTH_LONG).show();
-								return false;
-							}
-						})
-					.setPositiveButton("确定", new OnClickListener(){
-
-							@Override
-							public void onClick(View p1)
-							{
-								// TODO: Implement this method
-							}
-						})
-					.setNegativeButton("取消", new OnClickListener(){
-
-							@Override
-							public void onClick(View p1)
-							{
-								// TODO: Implement this method
-							}
-						});
+new SnackBar.makeText(YOURACTIVITY.this),"MESSAGE",SnackBar.LENGTH_LONG).setAction(LISTENER).show;
 ```
-
-设置第三个Action按钮方法：
+自定义Show时间事件：
 ```java
-alert.setNeutralButton("第三", new OnClickListener(){
-
-							@Override
-							public void onClick(View p1)
-							{
-								// TODO: Implement this method
-							}
-						})
-					.show();
+new SnackBar.makeText(YOURACTIVITY.this),"MESSAGE",5*1000).show;
+```
+2秒show：
+```java
+new SnackBar.makeText(YOURACTIVITY.this),"MESSAGE",SnackBar.LENGTH_SHORT).show;
+```
+设置Action按钮颜色：
+```java
+new SnackBar.makeText(YOURACTIVITY.this),"MESSAGE",SnackBar.LENGTH_LONG).setAction(LISTENER).setActionColor(R.id.COLOR).show;
+```
+您也可以使文本内容大写或者小写：
+1.大写：
+```java
+new SnackBar.makeText(YOURACTIVITY.this),"MESSAGE",SnackBar.LENGTH_LONG).toUpperCase.show;
+```
+2.小写：
+```java
+new SnackBar.makeText(YOURACTIVITY.this),"MESSAGE",SnackBar.LENGTH_LONG).toLowerCase.show;
 ```
 
 #### License
