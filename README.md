@@ -19,12 +19,8 @@
 compile 'peter1303.material.MaterialDesignDialog'
 ```
 
-使用方法：
-普通例子：
-```java
-new SnackBar.makeText(YOURACTIVITY.this),"MESSAGE",SnackBar.LENGTH_LONG).show;
-```
-使用方法：
+#使用方法：
+
 ```java
 final MaterialDialog alert=new MaterialDialog(MainActivity.this);
 					alert.setTitle("标题")
