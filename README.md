@@ -19,7 +19,7 @@
 compile 'peter1303.material.MaterialDesignDialog'
 ```
 
-#使用方法：
+使用方法：
 
 ```java
 final MaterialDialog alert=new MaterialDialog(MainActivity.this);
